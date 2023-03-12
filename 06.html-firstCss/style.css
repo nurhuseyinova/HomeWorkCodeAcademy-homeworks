@@ -21,7 +21,7 @@ background-color: red;}
 #Sec2{background-color: coral;
 padding: 10px 550px;}
 #usercenter{text-align: center;}
-
+#textarea{resize: none;}
 
 .date{color: blueviolet;}
 .age{color: rgb(150, 14, 14);}
