@@ -1,0 +1,38 @@
+#Sec1{background-color: darkcyan;
+padding: 70px 200px;}
+#selector{text-align: center;}
+.name{color: blue;}
+.surname{color: darkgreen;}
+.email{color: rgb(68, 7, 124);}
+.password{color: yellow;}
+#Sec1 input:focus::placeholder{color: red;}
+#Sec1 input:focus{color: white;
+background-color: black;}
+
+
+
+
+#Sec1 button{color: blue;
+background-color: yellow;}
+#Sec1 button:hover{color: green;
+background-color: red;}
+
+
+#Sec2{background-color: coral;
+padding: 10px 550px;}
+#usercenter{text-align: center;}
+
+
+.date{color: blueviolet;}
+.age{color: rgb(150, 14, 14);}
+#Sec2 button{color: black;
+background-color: green;}
+#Sec2 button:hover{color: red;
+background-color: cyan;}
+
+
+#Sec3{background-color: rgb(16, 138, 138);
+padding: 100px 400px;}
+.citygreen{color: rgb(13, 121, 13);}
+.city{color: brown;
+padding: 10px 50px;}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head id="top">
+<body>
+    <h1 id="selector">Css Selector</h1>
+       <form >
+
+       <section id="Sec1">
+        
+          <h2>Register Form</h2>
+            <label class="name" for="q">First name:</label><br>
+            <input type="text" required id="q" placeholder="Enter a name" size="50px" ><br><br>
+            <label class="surname" for="w">Last name:</label><br>
+            <input type="text" required id="w" placeholder="Enter a surname" size="50px" ><br><br>
+            <label class="email" for="e">Email:</label><br>
+            <input type="text" required id="e" placeholder="Enter an email" size="50px" ><br><br>
+            <label class="password" for="r">Password</label><br>
+            <input type="text" required id="r" placeholder="Enter a password" size="50px" ><br><br>
+            <style>
+                input{accent-color: darkblue;}
+            </style>
+
+            <input type="checkbox" required id="o" >
+            <label for="o">Accept all requirments</label><br><br>
+            <input type="radio" required id="u" name="n">
+            <label for="u">Teacher</label>
+            <input type="radio" required id="y" name="n">
+            <label for="y">Student</label>
+            <input type="radio" required id="t" name="n">
+            <label for="t">Other</label><br><br>
+            <button>Sign in</button><br>
+            
+            <a href="#Sec2">Skip</a>
+
+
+        </section>
+    </form>
+    <form > 
+       <section id="Sec2">
+            <h1 id="usercenter">User Info</h1>
+             <h2>Who are u?</h2>
+            <textarea name="" id="textarea" cols="50" rows="10" placeholder="Add some info about yourself..." required></textarea><br>
+      
+            <input type="file" required><br><br>
+            <label class="date" for="s">Choose date:</label>
+            <input type="date" id="s" required><br><br>
+            <label class="age" for="d">Age:</label>
+            <input type="text" id="d" required><br><br>
+            <button>Save</button><br><br>
+            <div>
+                <span>Maybe later:</span>
+                <a href="#Sec3">Skip</a><br>
+                <span>Go back and sign in:</span>
+                <a href="#Sec1">Sign in</a>
+            </div>
+            
+
+
+        </section>
+    </form> 
+    <form >
+        <section id="Sec3">
+            <h1>Change tags' color without class name and id. </h1>
+          <h3 class="city" >Cities</h3>
+                <ul class="citygreen">
+                    <li>Shusha</li>
+                    <li>Qusar</li>
+                    <li>Baku</li>
+                </ul><br>
+                <ol type="1">
+                    <li>Ismayili</li>
+                    <li>Shamkir</li>
+                    <li>Sirvan</li>
+                    <li>Qazag</li>
+                </ol><br>
+                <p>Lorem1</p>
+                <p>Lorem2</p>
+                <div>
+                    
+                    <a href="#top">Go back</a>
+                    <span>to firs section!</span>
+
+                </div>
+
+            
+
+        </section>
+    </form> 
+   
+    
+</body>
+</html>
