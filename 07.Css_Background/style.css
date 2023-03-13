@@ -1,0 +1,73 @@
+body.index {background-image: url("./image/forest1.jpg");
+background-size: cover;
+}
+section#Sec1{display: flex;}
+#il{
+padding-right:300px ;
+padding-top:100px ;}
+
+
+div button{
+padding:5px 50px ;}
+
+#hp{
+padding-left: 200px ;
+padding-top:200px ;
+color: rgb(34, 4, 119);}
+
+#learn{
+    padding: 5px 70px;
+}
+button:hover{color: rgb(228, 74, 19);
+background-color: rgb(201, 201, 236);
+border: navy;}
+
+
+
+#margin{margin: 0%;}
+#tex{text-align: center;}
+.info{background-image: url("./image/sightseeng1.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;}
+
+
+
+section#center{
+padding-top: 80px ;
+padding-bottom:150px  ;
+padding-left: 40px ;
+padding-right: 40px ;
+color: rgb(17, 173, 179);
+}
+#image2{background-image: url("./image/star1.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#image3{background-image: url("./image/flower.jpg");
+height: 100vh;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+#image4{background-image: url("./image/minyom1.jpg");
+height: 100vh;
+width: 50%;
+background-repeat: no-repeat;
+background-size: cover;}
+
+#image5{background-image: url("./image/minyon2.jpg");
+    height: 100vh;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.near{display: flex;}
+
+
