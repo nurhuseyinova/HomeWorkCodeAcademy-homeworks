@@ -1,0 +1,2 @@
+# CssBoxModel
+i used list-style:none;, text-decarotion:none;, display:flex;, align-items:center;, justtify-content: space-around;, width:80px;,margin:0px;, bg-image:url("");, bg-size:cover;, bg-repeat:no-repeat;, bg-attachment:fixed;, padding: ;, font-size: ;, font-weight:bold;, text-shadow ,border and so on.
