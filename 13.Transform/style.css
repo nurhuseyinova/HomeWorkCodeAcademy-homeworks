@@ -1,0 +1,77 @@
+.sec1 {
+  height: 100vh;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.item2 {
+  display: none;
+}
+.box :hover .item2 {
+  display: block;
+}
+.box :hover .item1 {
+  display: none;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  transition: 2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 {
+  background-color: brown;
+}
+.box1:hover {
+  transform: scale(1.2);
+}
+.box2 {
+  background-color: darkgreen;
+}
+.box2:hover {
+  transform: translate(50%, -100%);
+}
+.box3 {
+  background-color: darkmagenta;
+}
+.box3:hover {
+  transform: rotatey(360deg);
+}
+.box4 {
+  background-color: orange;
+}
+.box4:hover {
+  transform: skew(45deg);
+}
+.sec2 {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.earth {
+  width: 150px;
+  border-radius: 50%;
+  animation: rotate 20s infinite linear;
+}
+.rotate {
+  animation: rotate 50s infinite linear;
+}
+.lunar {
+  width: 50px;
+  border-radius: 50%;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
