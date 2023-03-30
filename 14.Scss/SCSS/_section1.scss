@@ -1,0 +1,39 @@
+.sec1 {
+  height: 100vh;
+  border: 2px solid black;
+  margin-top: 10px;
+  .boxes {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    .box {
+      border: 1px dashed;
+      background-color: orange;
+      height: 150px;
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 2s;
+      background-size: cover;
+      background-position: center;
+      &:hover {
+        transform: rotateX(360deg);
+        h3 {
+          display: none;
+        }
+        &:first-child {
+          background-image: url("./mini1\ \(2\).jpg");
+        }
+        &:nth-child(2) {
+          background-image: url("./mini3.jpg");
+        }
+        &:nth-child(3) {
+          background-image: url("./mini2\ \(2\).jpg");
+        }
+      }
+    }
+  }
+}

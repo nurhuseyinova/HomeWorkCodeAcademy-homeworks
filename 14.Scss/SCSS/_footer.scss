@@ -1,0 +1,17 @@
+footer {
+  background-color: rgb(213, 230, 224);
+  margin-top: 10px;
+  line-height: 4vh;
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0;
+    ul {
+      li {
+        a {
+          color: gray;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  color: white;
+  background-color: black;
+}
+header nav {
+  padding: 15px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav ul li {
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+header nav ul li a {
+  color: white;
+}
+header nav ul li a:hover {
+  color: black;
+}
+header nav ul li:hover {
+  color: black;
+  background-color: white;
+}
+
+footer {
+  background-color: rgb(213, 230, 224);
+  margin-top: 10px;
+  line-height: 4vh;
+}
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+footer nav ul li a {
+  color: gray;
+}
+
+.sec1 {
+  height: 100vh;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.sec1 .boxes {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.sec1 .boxes .box {
+  border: 1px dashed;
+  background-color: orange;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+  background-size: cover;
+  background-position: center;
+}
+.sec1 .boxes .box:hover {
+  transform: rotateX(360deg);
+}
+.sec1 .boxes .box:hover h3 {
+  display: none;
+}
+.sec1 .boxes .box:hover:first-child {
+  background-image: url("./mini1 (2).jpg");
+}
+.sec1 .boxes .box:hover:nth-child(2) {
+  background-image: url("./mini3.jpg");
+}
+.sec1 .boxes .box:hover:nth-child(3) {
+  background-image: url("./mini2 (2).jpg");
+}/*# sourceMappingURL=main.css.map */

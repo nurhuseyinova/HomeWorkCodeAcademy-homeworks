@@ -1,0 +1,26 @@
+header {
+  color: white;
+  background-color: black;
+  nav {
+    padding: 15px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      li {
+        padding: 5px 20px;
+        border-radius: 5px;
+        a {
+          color: white;
+          &:hover {
+            color: black;
+          }
+        }
+        &:hover {
+          color: black;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
