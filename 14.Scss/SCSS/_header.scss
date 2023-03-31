@@ -10,15 +10,13 @@ header {
       li {
         padding: 5px 20px;
         border-radius: 5px;
-        a {
-          color: white;
-          &:hover {
-            color: black;
-          }
-        }
-        &:hover {
+        transition: 3s;
+        color: white;
+      
+        &:hover a{
           color: black;
           background-color: white;
+          transform: scale(1.2);
         }
       }
     }

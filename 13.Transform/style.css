@@ -9,13 +9,12 @@
 .item2 {
   display: none;
 }
-.box :hover .item2 {
+.box:hover .item2 {
   display: block;
 }
-.box :hover .item1 {
+.box:hover .item1 {
   display: none;
 }
-
 .box {
   height: 200px;
   width: 200px;
