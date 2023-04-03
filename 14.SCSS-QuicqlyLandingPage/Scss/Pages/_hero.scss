@@ -1,0 +1,120 @@
+.sec1 {
+  height: 100vh;
+  width: 100%;
+  background-color: $bg-white;
+  position: relative;
+  img {
+    position: absolute;
+    left: 367px;
+    top: 281px;
+  }
+  .common {
+    z-index: 1;
+
+    .hero1 {
+      padding-right: 109px;
+      position: absolute;
+      left: 129px;
+      top: 217px;
+      right: 500px;
+      bottom: 197px;
+      h6 {
+        font-size: 18px;
+        line-height: 23px;
+      }
+      h1 {
+        font-size: 64px;
+        line-height: 120%;
+        margin-top: 24px;
+      }
+      p {
+        font-size: 24px;
+        line-height: 150%;
+        margin-top: 32px;
+        padding-right: 105px;
+      }
+
+      .sec1btn {
+        margin-top: 48px;
+        @include display;
+        justify-content: flex-start;
+        column-gap: 20px;
+        a {
+          font-size: 18px;
+          padding: 16px 36px 15px;
+
+          border-radius: 8px;
+        }
+        .sign {
+          background-color: $bg-dgreen;
+        }
+        .learn {
+          color: $bg-dark;
+          background-color: $color-white;
+        }
+      }
+    }
+    .hero2 {
+      position: absolute;
+
+      .bgimg {
+        position: absolute;
+        width: 415px;
+        height: 490px;
+        z-index: 2;
+        left: 875px;
+        top: 125px;
+        right: 150px;
+      }
+      .bgblue {
+        position: absolute;
+        width: 541px;
+        height: 601px;
+        left: 805px;
+        top: 80px;
+        right: 94px;
+      }
+
+      .item {
+        position: relative;
+        background-color: $color-white;
+        border-radius: 12px;
+        @include display;
+
+        left: 1013px;
+        top: 155px;
+
+        width: 329px;
+        height: 100px;
+
+        z-index: 3;
+        .avatar {
+          border: 3px solid $bg-pgreen;
+          border-radius: 50%;
+          position: absolute;
+          width: 63px;
+          height: 63px;
+          top: 17px;
+          left: 21px;
+        }
+
+        .note {
+          position: absolute;
+          left: 100px;
+          top: 20px;
+          h4 {
+            font-size: 24px;
+            line-height: 30px;
+            color: $bg-dgreen;
+          }
+          p {
+            font-size: 16px;
+            line-height: 150%;
+            color: $bg-dgreen;
+          }
+        }
+        
+      }
+    }
+  }
+}

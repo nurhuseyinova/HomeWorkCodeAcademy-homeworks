@@ -1,0 +1,64 @@
+footer {
+  line-height: 6vh;
+  height: 70vh;
+  background-color: $bg-dark;
+  padding: 30px;
+  .footerdiv {
+    position: relative;
+    height: 100%;
+    border-bottom: 1px solid #dcf2ed;
+    @include display;
+    padding: 60px;
+    background-color: $color-dark;
+    
+    .quicky {
+      position: absolute;
+      left: 682px;
+      top: 346px;
+      z-index: 7;
+    }
+    .end1 {
+      h3 {
+        font-size: 32px;
+        color: $color-white;
+      }
+      label {
+        color: $color-white;
+      }
+      .footerflex {
+        @include display;
+        column-gap: 20px;
+        .checkbox {
+          accent-color: $bg-pgreen;
+        }
+      }
+      .row {
+        @include display;
+        border: 1px solid $bg-dgreen;
+        margin-top: 20px;
+        .col-8 {
+          color: rgba(32, 72, 79, 0.2);
+          background-color: $color-white;
+        }
+        .col {
+          color: $color-dark;
+          background-color: $bg-pgreen;
+        }
+      }
+    }
+  }
+  .end2 {
+    @include display;
+    column-gap: 75px;
+    nav {
+      ul {
+        li {
+          h5 {
+            color: $color-white;
+          }
+          
+        }
+      }
+    }
+  }
+}

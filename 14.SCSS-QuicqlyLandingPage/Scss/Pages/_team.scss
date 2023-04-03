@@ -1,0 +1,73 @@
+.sec2{
+    margin-top: 50px;
+    margin-bottom:400px ;
+    height: 100vh;
+    width: 100%;
+    background-color: $bg-white;
+    .sec2h1{font-size: 40px;
+        line-height: 50px;
+        @include display;
+        justify-content: center;
+        text-align: center;
+        color: $color-dark
+       
+
+    }
+    .sec2p{
+        @include display;
+        justify-content: center;
+        text-align: center;
+        padding: 0 430px 64px;
+        font-size: 16px;
+        color: $color-dark;
+        
+    }
+    .team{
+       
+        .teamflex{
+            @include display;
+            justify-content: center;
+            gap: 53px;
+            margin-top: 50px;
+            
+            
+        
+        
+        .hero-banner1{
+           height: 100%;
+          
+            img{
+                height: 250px;
+                width: 250px;
+
+            }
+            h1{color: $color-dark;
+                font-size: 24px;
+                line-height: 6vh;
+
+            }
+            p{
+                font-size: 18px;
+                color: $bg-dgreen;
+
+            }
+            .icons{
+                margin-top: 20px;
+              
+            .icon{
+                
+                color: $color-dark;
+                border: 1px solid $bg-pgreen;
+                border-radius: 50%;
+                background-color: $color-white;
+                padding: 5px 8px;
+
+            }
+            
+        }
+    }  }
+   
+
+        
+        }
+    }
