@@ -3,15 +3,22 @@
   width: 100%;
   background-color: $bg-white;
   position: relative;
+ padding-top:  40px;
   img {
     position: absolute;
     left: 367px;
     top: 281px;
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
   }
   .common {
+    @include display;
+    width: 100%;
     z-index: 1;
 
     .hero1 {
+      width: 50%;
       padding-right: 109px;
       position: absolute;
       left: 129px;
@@ -53,8 +60,12 @@
           background-color: $color-white;
         }
       }
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
     }
     .hero2 {
+      width: 50%;
       position: absolute;
 
       .bgimg {
@@ -80,13 +91,10 @@
         background-color: $color-white;
         border-radius: 12px;
         @include display;
-
         left: 1013px;
         top: 155px;
-
         width: 329px;
         height: 100px;
-
         z-index: 3;
         .avatar {
           border: 3px solid $bg-pgreen;
@@ -113,8 +121,12 @@
             color: $bg-dgreen;
           }
         }
-        
       }
+      @media only screen and (max-width: 767px) {
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
     }
   }
 }

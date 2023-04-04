@@ -19,12 +19,13 @@ h1, p, h4 {
 }
 
 header {
-  background-color: #000000;
-  padding: 20px;
+  background-color: #20484F;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 header .container {
   padding: 17px 28px;
-  background-color: #20484F;
 }
 header .container nav {
   display: flex;
@@ -38,12 +39,22 @@ header .container nav ul {
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
+@media only screen and (max-width: 767px) {
+  header .container nav ul {
+    display: none;
+  }
+}
 header .container nav img {
   font-size: 24px;
 }
 header .container nav .btn {
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+@media only screen and (max-width: 767px) {
+  header .container nav .btn {
+    display: none;
+  }
 }
 header .container nav .btn .signup {
   background-color: #B8E4DA;
@@ -53,22 +64,128 @@ header .container nav .btn a {
   padding: 10px 16px;
   font-size: 14px;
 }
+header .container nav .bar {
+  display: none;
+}
+header .container nav .bar i {
+  color: #ffffff;
+}
+@media only screen and (max-width: 767px) {
+  header .container nav .bar {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+footer {
+  line-height: 6vh;
+  height: 70%;
+  background-color: #000000;
+  padding: 30px;
+}
+footer .footerdiv {
+  position: relative;
+  height: 100%;
+  border-bottom: 1px solid #dcf2ed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #072125;
+}
+footer .footerdiv .quicky {
+  position: absolute;
+  left: 642px;
+  top: 276px;
+  z-index: 7;
+}
+footer .footerdiv .end1 h3 {
+  font-size: 32px;
+  color: #ffffff;
+}
+footer .footerdiv .end1 label {
+  color: #ffffff;
+}
+footer .footerdiv .end1 .footerflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+footer .footerdiv .end1 .footerflex .checkbox {
+  accent-color: #B8E4DA;
+}
+footer .footerdiv .end1 .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #20484F;
+  margin-top: 20px;
+}
+footer .footerdiv .end1 .row .col-8 {
+  color: rgba(32, 72, 79, 0.2);
+  background-color: #ffffff;
+}
+footer .footerdiv .end1 .row .col {
+  color: #072125;
+  background-color: #B8E4DA;
+}
+@media only screen and (max-width: 767px) {
+  footer .footerdiv {
+    flex-direction: column;
+  }
+}
+footer .end2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 75px;
+       column-gap: 75px;
+}
+footer .end2 nav ul li h5 {
+  color: #ffffff;
+}
+@media only screen and (max-width: 767px) {
+  footer .end2 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .sec1 {
   height: 100vh;
   width: 100%;
   background-color: #FAFAFA;
   position: relative;
+  padding-top: 40px;
 }
 .sec1 img {
   position: absolute;
   left: 367px;
   top: 281px;
 }
+@media only screen and (max-width: 767px) {
+  .sec1 img {
+    display: none;
+  }
+}
 .sec1 .common {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   z-index: 1;
 }
 .sec1 .common .hero1 {
+  width: 50%;
   padding-right: 109px;
   position: absolute;
   left: 129px;
@@ -112,7 +229,13 @@ header .container nav .btn a {
   color: #000000;
   background-color: #ffffff;
 }
+@media only screen and (max-width: 767px) {
+  .sec1 .common .hero1 {
+    width: 100%;
+  }
+}
 .sec1 .common .hero2 {
+  width: 50%;
   position: absolute;
 }
 .sec1 .common .hero2 .bgimg {
@@ -169,12 +292,17 @@ header .container nav .btn a {
   line-height: 150%;
   color: #20484F;
 }
+@media only screen and (max-width: 767px) {
+  .sec1 .common {
+    flex-direction: column;
+  }
+}
 
 .sec2 {
-  margin-top: 50px;
-  margin-bottom: 400px;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-color: #FAFAFA;
 }
 .sec2 .sec2h1 {
@@ -193,7 +321,6 @@ header .container nav .btn a {
   justify-content: space-between;
   justify-content: center;
   text-align: center;
-  padding: 0 430px 64px;
   font-size: 16px;
   color: #072125;
 }
@@ -231,68 +358,14 @@ header .container nav .btn a {
   background-color: #ffffff;
   padding: 5px 8px;
 }
-
-footer {
-  line-height: 6vh;
-  height: 70vh;
-  background-color: #000000;
-  padding: 30px;
+@media only screen and (max-width: 767px) {
+  .sec2 .team .teamflex .hero-banner1 .icons .icon {
+    display: none;
+  }
 }
-footer .footerdiv {
-  position: relative;
-  height: 100%;
-  border-bottom: 1px solid #dcf2ed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px;
-  background-color: #072125;
-}
-footer .footerdiv .quicky {
-  position: absolute;
-  left: 682px;
-  top: 346px;
-  z-index: 7;
-}
-footer .footerdiv .end1 h3 {
-  font-size: 32px;
-  color: #ffffff;
-}
-footer .footerdiv .end1 label {
-  color: #ffffff;
-}
-footer .footerdiv .end1 .footerflex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-}
-footer .footerdiv .end1 .footerflex .checkbox {
-  accent-color: #B8E4DA;
-}
-footer .footerdiv .end1 .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #20484F;
-  margin-top: 20px;
-}
-footer .footerdiv .end1 .row .col-8 {
-  color: rgba(32, 72, 79, 0.2);
-  background-color: #ffffff;
-}
-footer .footerdiv .end1 .row .col {
-  color: #072125;
-  background-color: #B8E4DA;
-}
-footer .end2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  -moz-column-gap: 75px;
-       column-gap: 75px;
-}
-footer .end2 nav ul li h5 {
-  color: #ffffff;
+@media only screen and (max-width: 767px) {
+  .sec2 .team .teamflex {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 footer {
   line-height: 6vh;
-  height: 70vh;
+  height: 70%;
   background-color: $bg-dark;
   padding: 30px;
   .footerdiv {
@@ -10,12 +10,15 @@ footer {
     @include display;
     padding: 60px;
     background-color: $color-dark;
-    
     .quicky {
       position: absolute;
-      left: 682px;
-      top: 346px;
+      left: 642px;
+      top: 276px;
       z-index: 7;
+      @media only screen and (max-width:767px){
+        
+        
+      }
     }
     .end1 {
       h3 {
@@ -46,6 +49,9 @@ footer {
         }
       }
     }
+    @media only screen and (max-width:767px){
+      flex-direction: column;
+    }
   }
   .end2 {
     @include display;
@@ -59,6 +65,13 @@ footer {
           
         }
       }
+      
+    }
+    @media only screen and (max-width:767px){
+      flex-direction: column;
+      text-align: center;
+     
     }
   }
 }
+
