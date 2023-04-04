@@ -11,6 +11,6 @@
 12.Responsive-page-https://sage-crepe-2805a2.netlify.app <br>
 13.Transform-https://gleeful-boba-ef6fe4.netlify.app <br>
 14.Scss-https://serene-starburst-cff576.netlify.app <br>
-14.SCSS-QuicqlyLandingPage-https://effulgent-starburst-a5f245.netlify.app "no responsive"
+14.SCSS-QuicqlyLandingPage-https://effulgent-starburst-a5f245.netlify.app 
 
 
