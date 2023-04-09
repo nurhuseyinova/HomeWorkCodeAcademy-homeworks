@@ -1,8 +1,8 @@
 .sec1 {
-  pad: 217px 139x;
+  padding: ;
   background-color: $bg-white;
   .hero-sec1 {
-    position: relative;
+    
     img {
       position: absolute;
       left: 367px;
@@ -12,14 +12,14 @@
       }
     }
     .common {
-      padding: 5% 10%;
+      padding: 1% 10%;
      
       @include display;
       gap: 20px;
 
       z-index: 1;
 
-      .hero1 {
+      .hero1 {z-index: 6;
         h6 {
           font-size: 18px;
         }
@@ -60,10 +60,6 @@
 
         .bgimg {
           width: 30%;
-          
-          
-          
-
           z-index: 2;
         }
         

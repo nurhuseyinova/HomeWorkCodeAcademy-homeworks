@@ -111,6 +111,11 @@ footer .footerdiv .quicky {
   top: 276px;
   z-index: 7;
 }
+@media only screen and (max-width: 767px) {
+  footer .footerdiv .quicky {
+    display: none;
+  }
+}
 footer .footerdiv .end1 h3 {
   font-size: 32px;
   color: #ffffff;
@@ -166,11 +171,8 @@ footer .end2 nav ul li h5 {
 }
 
 .sec1 {
-  pad: 217px 139x;
+  padding: 217px 139px;
   background-color: #FAFAFA;
-}
-.sec1 .hero-sec1 {
-  position: relative;
 }
 .sec1 .hero-sec1 img {
   position: absolute;
