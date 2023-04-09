@@ -1,0 +1,42 @@
+.hero {
+  background-color: $pale-gray;
+  padding: 80px 94px 136px 139px;
+  @include display;
+  justify-content: center;
+  gap: 109px;
+  .heronote {
+    h5 {
+      color: $darkgreen;
+    }
+    h1 {
+      font-size: 64px;
+      color: $dark;
+    }
+    p {
+      color: $dark;
+      font-size: 24px;
+    }
+    .herobtn {
+      margin-top: 48px;
+      a {
+        padding: 16px 36px 15px;
+        border-radius: 8px;
+      }
+      .sign {
+        color: $white;
+        background-color: $darkgreen;
+      }
+      .learn {
+        color: $darkgreen;
+        background-color: $white;
+      }
+    }
+  }
+  .heroimg {
+    margin-top: 30px;
+  }
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

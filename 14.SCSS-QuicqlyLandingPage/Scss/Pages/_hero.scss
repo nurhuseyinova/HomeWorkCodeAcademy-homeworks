@@ -1,132 +1,112 @@
 .sec1 {
-  height: 100vh;
-  width: 100%;
+  pad: 217px 139x;
   background-color: $bg-white;
-  position: relative;
- padding-top:  40px;
-  img {
-    position: absolute;
-    left: 367px;
-    top: 281px;
-    @media only screen and (max-width: 767px) {
-      display: none;
+  .hero-sec1 {
+    position: relative;
+    img {
+      position: absolute;
+      left: 367px;
+      top: 200px;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    .common {
+      padding: 5% 10%;
+     
+      @include display;
+      gap: 20px;
+
+      z-index: 1;
+
+      .hero1 {
+        h6 {
+          font-size: 18px;
+        }
+        h1 {
+          font-size: 64px;
+          margin-top: 24px;
+        }
+        p {
+          font-size: 24px;
+          margin-top: 32px;
+        }
+
+        .sec1btn {
+          margin-top: 48px;
+          @include display;
+          justify-content: flex-start;
+          column-gap: 20px;
+          a {
+            font-size: 18px;
+            padding: 16px 36px 15px;
+            border-radius: 8px;
+          }
+          .sign {
+            background-color: $bg-dgreen;
+          }
+          .learn {
+            color: $bg-dark;
+            background-color: $color-white;
+          }
+        }
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .hero2 {
+      
+
+        .bgimg {
+          width: 30%;
+          
+          
+          
+
+          z-index: 2;
+        }
+        
+
+        .item {
+          position: relative;
+          top: -400px;
+          background-color: $color-white;
+          border-radius: 12px;
+          @include display;
+          justify-content: flex-start;
+
+          width: 400px;
+          column-gap: 15px;
+          padding: 5px 20px;
+
+          z-index: 3;
+          .avatar {
+            border: 3px solid $bg-pgreen;
+            border-radius: 50%;
+          }
+
+          .note {
+            h4 {
+              font-size: 24px;
+
+              color: $bg-dgreen;
+            }
+            p {
+              font-size: 16px;
+
+              color: $bg-dgreen;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+      }
     }
   }
-  .common {
-    @include display;
-    width: 100%;
-    z-index: 1;
 
-    .hero1 {
-      width: 50%;
-      padding-right: 109px;
-      position: absolute;
-      left: 129px;
-      top: 217px;
-      right: 500px;
-      bottom: 197px;
-      h6 {
-        font-size: 18px;
-        line-height: 23px;
-      }
-      h1 {
-        font-size: 64px;
-        line-height: 120%;
-        margin-top: 24px;
-      }
-      p {
-        font-size: 24px;
-        line-height: 150%;
-        margin-top: 32px;
-        padding-right: 105px;
-      }
-
-      .sec1btn {
-        margin-top: 48px;
-        @include display;
-        justify-content: flex-start;
-        column-gap: 20px;
-        a {
-          font-size: 18px;
-          padding: 16px 36px 15px;
-
-          border-radius: 8px;
-        }
-        .sign {
-          background-color: $bg-dgreen;
-        }
-        .learn {
-          color: $bg-dark;
-          background-color: $color-white;
-        }
-      }
-      @media only screen and (max-width: 767px) {
-        width: 100%;
-      }
-    }
-    .hero2 {
-      width: 50%;
-      position: absolute;
-
-      .bgimg {
-        position: absolute;
-        width: 415px;
-        height: 490px;
-        z-index: 2;
-        left: 875px;
-        top: 125px;
-        right: 150px;
-      }
-      .bgblue {
-        position: absolute;
-        width: 541px;
-        height: 601px;
-        left: 805px;
-        top: 80px;
-        right: 94px;
-      }
-
-      .item {
-        position: relative;
-        background-color: $color-white;
-        border-radius: 12px;
-        @include display;
-        left: 1013px;
-        top: 155px;
-        width: 329px;
-        height: 100px;
-        z-index: 3;
-        .avatar {
-          border: 3px solid $bg-pgreen;
-          border-radius: 50%;
-          position: absolute;
-          width: 63px;
-          height: 63px;
-          top: 17px;
-          left: 21px;
-        }
-
-        .note {
-          position: absolute;
-          left: 100px;
-          top: 20px;
-          h4 {
-            font-size: 24px;
-            line-height: 30px;
-            color: $bg-dgreen;
-          }
-          p {
-            font-size: 16px;
-            line-height: 150%;
-            color: $bg-dgreen;
-          }
-        }
-      }
-      @media only screen and (max-width: 767px) {
-      }
-    }
-    @media only screen and (max-width: 767px) {
-      flex-direction: column;
-    }
+  @media only screen and (max-width: 767px) {
+    padding: 0 5%;
   }
 }

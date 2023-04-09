@@ -1,13 +1,15 @@
 header {
+  
   background-color: $bg-dgreen;
   position: fixed;
   width: 100%;
   z-index: 10;
   .container {
-    padding: 17px 28px;
+    padding: 17px 0;
+    
     nav {
       @include display;
-      ul {
+      ul {margin: 0;
         @include display;
         column-gap: 32px;
         @media only screen and (max-width: 767px) {
@@ -42,8 +44,17 @@ header {
       }
       @media only screen and (max-width: 767px) {
         @include display;
-        width: 100%;
+        
       }
     }
+   
+    
   }
+  @media only screen and (max-width: 767px) {
+ padding: 0 5%;
+    
+  }
+  
+
+  
 }

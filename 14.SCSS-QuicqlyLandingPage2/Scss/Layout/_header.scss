@@ -1,0 +1,51 @@
+header {
+  background-color: $darkgreen;
+  padding: 17px 28px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+
+  nav {
+    @include display;
+    .bar {
+      display: none;
+      @media only screen and (max-width: 767px) {
+        font-size: 24px;
+        display: block;
+        color: $white;
+      }
+    }
+
+    ul {
+      @include display;
+      gap: 32px;
+      margin: 0;
+      li {
+        a {
+          color: $white;
+          font-size: 16px;
+        }
+        @media only screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+    .btn {
+      a {
+        font-size: 14px;
+        padding: 10px 16px;
+        border-radius: 8px;
+      }
+      .signup {
+        color: $darkgreen;
+        background-color: $primarygreen;
+      }
+      .login {
+        color: $white;
+      }
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}

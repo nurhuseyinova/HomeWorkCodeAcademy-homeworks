@@ -25,7 +25,7 @@ header {
   z-index: 10;
 }
 header .container {
-  padding: 17px 28px;
+  padding: 17px 0;
 }
 header .container nav {
   display: flex;
@@ -33,6 +33,7 @@ header .container nav {
   justify-content: space-between;
 }
 header .container nav ul {
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,7 +81,11 @@ header .container nav .bar i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0 5%;
   }
 }
 
@@ -161,54 +166,42 @@ footer .end2 nav ul li h5 {
 }
 
 .sec1 {
-  height: 100vh;
-  width: 100%;
+  pad: 217px 139x;
   background-color: #FAFAFA;
-  position: relative;
-  padding-top: 40px;
 }
-.sec1 img {
+.sec1 .hero-sec1 {
+  position: relative;
+}
+.sec1 .hero-sec1 img {
   position: absolute;
   left: 367px;
-  top: 281px;
+  top: 200px;
 }
 @media only screen and (max-width: 767px) {
-  .sec1 img {
+  .sec1 .hero-sec1 img {
     display: none;
   }
 }
-.sec1 .common {
+.sec1 .hero-sec1 .common {
+  padding: 5% 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  gap: 20px;
   z-index: 1;
 }
-.sec1 .common .hero1 {
-  width: 50%;
-  padding-right: 109px;
-  position: absolute;
-  left: 129px;
-  top: 217px;
-  right: 500px;
-  bottom: 197px;
-}
-.sec1 .common .hero1 h6 {
+.sec1 .hero-sec1 .common .hero1 h6 {
   font-size: 18px;
-  line-height: 23px;
 }
-.sec1 .common .hero1 h1 {
+.sec1 .hero-sec1 .common .hero1 h1 {
   font-size: 64px;
-  line-height: 120%;
   margin-top: 24px;
 }
-.sec1 .common .hero1 p {
+.sec1 .hero-sec1 .common .hero1 p {
   font-size: 24px;
-  line-height: 150%;
   margin-top: 32px;
-  padding-right: 105px;
 }
-.sec1 .common .hero1 .sec1btn {
+.sec1 .hero-sec1 .common .hero1 .sec1btn {
   margin-top: 48px;
   display: flex;
   align-items: center;
@@ -217,84 +210,63 @@ footer .end2 nav ul li h5 {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.sec1 .common .hero1 .sec1btn a {
+.sec1 .hero-sec1 .common .hero1 .sec1btn a {
   font-size: 18px;
   padding: 16px 36px 15px;
   border-radius: 8px;
 }
-.sec1 .common .hero1 .sec1btn .sign {
+.sec1 .hero-sec1 .common .hero1 .sec1btn .sign {
   background-color: #20484F;
 }
-.sec1 .common .hero1 .sec1btn .learn {
+.sec1 .hero-sec1 .common .hero1 .sec1btn .learn {
   color: #000000;
   background-color: #ffffff;
 }
 @media only screen and (max-width: 767px) {
-  .sec1 .common .hero1 {
+  .sec1 .hero-sec1 .common .hero1 {
     width: 100%;
+    text-align: center;
   }
 }
-.sec1 .common .hero2 {
-  width: 50%;
-  position: absolute;
-}
-.sec1 .common .hero2 .bgimg {
-  position: absolute;
-  width: 415px;
-  height: 490px;
+.sec1 .hero-sec1 .common .hero2 .bgimg {
+  width: 30%;
   z-index: 2;
-  left: 875px;
-  top: 125px;
-  right: 150px;
 }
-.sec1 .common .hero2 .bgblue {
-  position: absolute;
-  width: 541px;
-  height: 601px;
-  left: 805px;
-  top: 80px;
-  right: 94px;
-}
-.sec1 .common .hero2 .item {
+.sec1 .hero-sec1 .common .hero2 .item {
   position: relative;
+  top: -400px;
   background-color: #ffffff;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  left: 1013px;
-  top: 155px;
-  width: 329px;
-  height: 100px;
+  justify-content: flex-start;
+  width: 400px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  padding: 5px 20px;
   z-index: 3;
 }
-.sec1 .common .hero2 .item .avatar {
+.sec1 .hero-sec1 .common .hero2 .item .avatar {
   border: 3px solid #B8E4DA;
   border-radius: 50%;
-  position: absolute;
-  width: 63px;
-  height: 63px;
-  top: 17px;
-  left: 21px;
 }
-.sec1 .common .hero2 .item .note {
-  position: absolute;
-  left: 100px;
-  top: 20px;
-}
-.sec1 .common .hero2 .item .note h4 {
+.sec1 .hero-sec1 .common .hero2 .item .note h4 {
   font-size: 24px;
-  line-height: 30px;
   color: #20484F;
 }
-.sec1 .common .hero2 .item .note p {
+.sec1 .hero-sec1 .common .hero2 .item .note p {
   font-size: 16px;
-  line-height: 150%;
   color: #20484F;
 }
 @media only screen and (max-width: 767px) {
-  .sec1 .common {
-    flex-direction: column;
+  .sec1 .hero-sec1 .common {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sec1 {
+    padding: 0 5%;
   }
 }
 
