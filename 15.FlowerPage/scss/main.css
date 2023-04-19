@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  max-width: 1200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+header .head {
+  background-color: rgb(167, 5, 167);
+}
+header .head nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+header .head nav img {
+  width: 9%;
+}
+header .head nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header .head nav ul li {
+  position: relative;
+}
+header .head nav ul li a {
+  font-size: 20px;
+  color: #ffffff;
+}
+header .head nav ul li a:hover::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(193, 11, 11);
+}
+@media only screen and (max-width: 767px) {
+  header .head nav ul li a {
+    display: none;
+  }
+}
+header .head nav a {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.sec1 {
+  background-color: rgb(254, 176, 254);
+  padding: 40px 20px;
+}
+.sec1 .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 767px) {
+  .sec1 .row {
+    text-align: center;
+  }
+}
+.sec1 .row .col img {
+  width: 50%;
+}
+.sec1 .row .col h3 {
+  color: rgb(6, 67, 6);
+}
+.sec1 .row .col h6 {
+  color: rgb(6, 67, 6);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(192, 192, 253);
+}
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+@media only screen and (max-width: 767px) {
+  footer nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+footer nav ul h3 {
+  color: rgb(7, 94, 4);
+}
+footer nav ul li a {
+  color: rgb(84, 15, 84);
+  font-size: 20px;
+  position: relative;
+}
+footer nav ul li a:hover::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(167, 5, 167);
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+
+  .head {
+    background-color: $bg-violet;
+    nav {
+      @include display;
+      padding: 0 40px;
+      img {
+        width: 9%;
+      }
+      ul {
+        margin: 0;
+        @include display;
+        gap: 40px;
+
+        li {
+          position: relative;
+          a {
+            font-size: 20px;
+            color: $color-white;
+            &:hover::after {
+              position: absolute;
+              content: "";
+              display: block;
+              height: 2px;
+              width: 100%;
+              background-color: $color-red;
+            }
+            @media only screen and (max-width: 767px) {
+              display: none;
+            }
+          }
+        }
+      }
+      a {
+        font-size: 20px;
+        color: $color-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.sec1 {
+  background-color: $bg-whiteviolet;
+  padding: 40px 20px;
+  .row {
+    @include display;
+    justify-content: space-around;
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+    }
+    .col {
+      img {
+        width: 50%;
+      }
+      h3 {
+        color: $green;
+      }
+      h6 {
+        color: $green;
+      }
+    }
+  }
+}

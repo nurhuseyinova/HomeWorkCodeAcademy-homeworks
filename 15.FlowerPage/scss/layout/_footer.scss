@@ -1,0 +1,35 @@
+footer {
+  @include display;
+  justify-content: center;
+  padding: 50px;
+  background-color: $footer-blue;
+
+  nav {
+    @include display;
+    gap: 60px;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    ul {
+      h3 {
+        color: $fh3-collor;
+      }
+      li {
+        a {
+          color: $fa-color;
+          font-size: 20px;
+          position: relative;
+          &:hover::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $bg-violet;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
