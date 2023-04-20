@@ -1,0 +1,39 @@
+.sec4 {
+  background-color: $bg-whitepink;
+  padding: 200px 0px;
+  @include display;
+  justify-content: center;
+  gap: 50px;
+  .meet1 {
+    color: $green;
+    text-align: center;
+  }
+  .meet2 {
+    .person {
+      background-color: $color-green;
+
+      padding: 7px 10px;
+      border: 1px dashed;
+      border-radius: 8px;
+      margin: 5px 5px 5px 0;
+      outline: #f4f5f9;
+    }
+    .num {
+      padding: 7px 27% 7px 30px;
+    }
+
+    .flower {
+      background-color: $color-green;
+      padding: 10px 40%;
+      border: 1px dashed;
+      border-radius: 8px;
+      margin: 5px 5px 5px 0;
+      outline: #f4f5f9;
+    }
+    .btn {
+      padding: 10px 42%;
+      background-color: $bg-violet;
+      border: none;
+    }
+  }
+}

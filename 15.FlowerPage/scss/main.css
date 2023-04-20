@@ -89,6 +89,44 @@ header .head nav a {
   color: rgb(6, 67, 6);
 }
 
+.sec4 {
+  background-color: rgb(255, 190, 255);
+  padding: 200px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
+}
+.sec4 .meet1 {
+  color: rgb(6, 67, 6);
+  text-align: center;
+}
+.sec4 .meet2 .person {
+  background-color: rgb(143, 246, 143);
+  padding: 7px 10px;
+  border: 1px dashed;
+  border-radius: 8px;
+  margin: 5px 5px 5px 0;
+  outline: #f4f5f9;
+}
+.sec4 .meet2 .num {
+  padding: 7px 27% 7px 30px;
+}
+.sec4 .meet2 .flower {
+  background-color: rgb(143, 246, 143);
+  padding: 10px 40%;
+  border: 1px dashed;
+  border-radius: 8px;
+  margin: 5px 5px 5px 0;
+  outline: #f4f5f9;
+}
+.sec4 .meet2 .btn {
+  padding: 10px 42%;
+  background-color: rgb(167, 5, 167);
+  border: none;
+}
+
 footer {
   display: flex;
   align-items: center;
