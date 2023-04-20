@@ -97,6 +97,7 @@ header .head nav a {
   justify-content: space-between;
   justify-content: center;
   gap: 50px;
+  flex-direction: column;
 }
 .sec4 .meet1 {
   color: rgb(6, 67, 6);
